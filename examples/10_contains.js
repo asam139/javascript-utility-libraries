@@ -1,4 +1,5 @@
 const R = require('ramda');
+const L = require('lodash');
 
 const users = [
   { name: 'John', age: 25 },
@@ -14,5 +15,16 @@ const users = [
 let isJohn = R.includes('John', R.pluck('name', users));
 
 if (isJohn) {
+  console.log('There is John in the list');
+}
+
+//----------------------solution---------------------------------------------------
+console.log("---------------------------------------------------")
+
+let name = L.map(users, 'name');
+let isJohn2= L.includes(name,'John');
+
+
+if (isJohn2) {
   console.log('There is John in the list');
 }
