@@ -18,7 +18,7 @@
   "homepage": "https://github.com/asam139/ramda_tutorial#readme",
   "dependencies": {
     "lodash": "^4.17.15",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "ramda": "^0.26.1"
   }
 }
